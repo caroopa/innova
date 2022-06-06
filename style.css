@@ -1,0 +1,86 @@
+:root {
+	--color-primario: #9BC53B;
+	--color-secundario: white;
+	--color-terciario: #19484D;
+	--color-cuarto: #2AB8C6;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:link, a:visited {
+	color: var(--color-quinto);
+}
+
+a:hover {
+	color: var(--color-primario);
+}
+
+h1 {
+	font-size: 3rem;
+	text-align: center;
+}
+
+h2 {
+	font-size: 3rem;
+}
+
+button {
+	border: none;
+}
+
+button:hover {
+	transform: scale(1.02);
+	transition: all 0.3s ease;
+}
+
+p {
+	font-size: 1.2rem;
+}
+
+/* ----------- */
+
+header {
+	height: 100vh;
+	background-image: url(./img/espacios\ verdes.jpg);
+	background-size: cover;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	/* position: fixed; */
+	top: 0;
+	background-color: var(--color-secundario);
+	width: 100%;
+	border-bottom: 1px solid var(--color-terciario);
+	/* background-color: black; */
+	opacity: 0.5;
+}
+
+ul {
+	width: 50%;
+	display: flex;
+	justify-content: space-around;
+	margin: 1.5rem;
+	font-size: 1.5rem;
+	margin: 3rem;
+}
+
+li {
+	list-style: none;
+}
+
+.logo {
+	width: 160px;
+	height: 60px;
+	margin: 2rem;
+}
