@@ -9,7 +9,7 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 a {
@@ -25,12 +25,14 @@ a:hover {
 }
 
 h1 {
-	font-size: 3rem;
+	font-size: 2.8;
 	text-align: center;
+	color: var(--color-terciario);
+	text-shadow: 2px 2px var(--color-cuarto);
 }
 
 h2 {
-	font-size: 3rem;
+	font-size: 2.5;
 }
 
 button {
@@ -44,12 +46,15 @@ button:hover {
 
 p {
 	font-size: 1.2rem;
+	color: var(--color-terciario);
 }
 
-/* ----------- */
+/* ******************************* */
+/* HEADER */
+/* ******************************* */
 
 header {
-	height: 100vh;
+	height: 800px;
 	background-image: url(./img/espacios\ verdes.jpg);
 	background-size: cover;
 }
@@ -61,9 +66,9 @@ nav {
 	top: 0;
 	background-color: var(--color-secundario);
 	width: 100%;
-	border-bottom: 1px solid var(--color-terciario);
-	/* background-color: black; */
-	opacity: 0.5;
+	border-bottom: 2px solid var(--color-terciario);
+	background-color: rgba(0, 0, 0, .5);
+	color: white
 }
 
 ul {
@@ -82,5 +87,94 @@ li {
 .logo {
 	width: 160px;
 	height: 60px;
-	margin: 2rem;
+	margin: 2rem 5rem;
+}
+
+/* presentación */
+
+.presentacion h1 {
+	margin-top: 10rem;
+}
+
+/* ******************************* */
+/* ABOUT */
+/* ******************************* */
+
+#about {
+	padding: 7rem 0;
+	display: flex;
+	/* max-width: 1200px; */
+	align-items: center;
+	justify-content: center;
+	background-image: url(./img/fondo.webp);
+	background-size: cover;
+}
+
+#about img {
+	width: 600px;
+	height: 400px;
+	border: 3px solid var(--color-primario);
+}
+
+.about_container {
+	padding: 2rem 5rem;
+}
+
+.about_container h1 {
+	margin-bottom: 2.3rem;
+}
+
+.about_container p {
+	text-align: justify;
+	width: 500px;
+}
+
+/* ******************************* */
+/* SERVICES */
+/* ******************************* */
+
+#services {
+	padding: 5rem;
+	background-color: rgb(242, 242, 242);
+}
+
+.services_container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 6rem;
+}
+
+.services_card {
+	width: 350px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.services_card h2 {
+	color: var(--color-primario);
+	margin-top: 2rem;
+	text-align: center;
+}
+
+.services_card p {
+	margin: 3rem 0;
+	/* text-align: justify; */
+	width: 250px;
+}
+
+.services_card img {
+	width: 150px;
+}
+
+button {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 1.3rem;
+	width: 150px;
+	height: 50px;
+	background-color: var(--color-primario);
+	color: var(--color-terciario);
+	border-radius: 50px;
 }
