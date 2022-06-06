@@ -90,10 +90,64 @@ li {
 	margin: 2rem 5rem;
 }
 
-/* presentación */
+#check {
+	display: none;
+}
+
+.barras {
+	opacity: 0;
+}
 
 .presentacion h1 {
 	margin-top: 10rem;
+}
+
+@media screen and (max-width: 1000px) {
+	.bar_btn {
+		font-size: 2rem;
+		margin: 1.5rem;
+		cursor: pointer;
+	}
+
+	.barras {
+		margin: 2rem;
+		color: var(--color-primario);
+		opacity: 1;
+	}
+
+	.nav {
+		display: flex;
+		flex-direction: column;
+		position: fixed;
+		width: 100%;
+		height: 0vh;
+		margin: 9rem 0;
+		background: rgba(0, 0, 0, 0.5);
+		text-align: center;
+		transition: all .5s;
+	}
+
+	.nav li {
+		display: none;
+		transition: all .5s;
+	}
+
+	.nav li a:hover {
+		color: var(--color-primario);
+		transition: .3s;
+	}
+
+	#check {
+		display: none;
+	}
+
+	#check:checked ~ .nav {
+		height: 500px;
+	}
+
+	#check:checked ~ .nav li {
+		display: block;
+	}
 }
 
 /* ******************************* */
@@ -101,9 +155,8 @@ li {
 /* ******************************* */
 
 #about {
-	padding: 7rem 0;
+	padding: 7rem;
 	display: flex;
-	/* max-width: 1200px; */
 	align-items: center;
 	justify-content: center;
 	background-image: url(./img/fondo.webp);
@@ -111,8 +164,6 @@ li {
 }
 
 #about img {
-	width: 600px;
-	height: 400px;
 	border: 3px solid var(--color-primario);
 }
 
@@ -129,6 +180,19 @@ li {
 	width: 500px;
 }
 
+@media screen and (max-width: 1000px) {
+	#about {
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	#about img {
+		width: 400px;
+		height: 250px;
+	}
+}
+	
 /* ******************************* */
 /* SERVICES */
 /* ******************************* */
@@ -143,6 +207,7 @@ li {
 	align-items: center;
 	justify-content: center;
 	margin-top: 6rem;
+	gap: 3rem;
 }
 
 .services_card {
@@ -177,4 +242,10 @@ button {
 	background-color: var(--color-primario);
 	color: var(--color-terciario);
 	border-radius: 50px;
+}
+
+@media screen and (max-width: 1000px) {
+	.services_container {
+		flex-direction: column;
+	}
 }
