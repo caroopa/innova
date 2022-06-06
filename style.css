@@ -53,22 +53,17 @@ p {
 /* HEADER */
 /* ******************************* */
 
-header {
-	height: 800px;
-	background-image: url(./img/espacios\ verdes.jpg);
-	background-size: cover;
-}
-
 nav {
 	display: flex;
 	justify-content: space-between;
-	/* position: fixed; */
+	position: sticky;
 	top: 0;
 	background-color: var(--color-secundario);
 	width: 100%;
 	border-bottom: 2px solid var(--color-terciario);
-	background-color: rgba(0, 0, 0, .5);
-	color: white
+	background-color: var(--color-secundario);
+	color: var(--color-terciario);
+	z-index: 1;
 }
 
 ul {
@@ -77,7 +72,7 @@ ul {
 	justify-content: space-around;
 	margin: 1.5rem;
 	font-size: 1.5rem;
-	margin: 3rem;
+	margin: 2rem;
 }
 
 li {
@@ -87,7 +82,7 @@ li {
 .logo {
 	width: 160px;
 	height: 60px;
-	margin: 2rem 5rem;
+	margin: 1rem 5rem;
 }
 
 #check {
@@ -98,8 +93,15 @@ li {
 	opacity: 0;
 }
 
-.presentacion h1 {
-	margin-top: 10rem;
+header {
+	/* position: relative; */
+	height: 600px;
+	background-image: url(./img/espacios\ verdes.jpg);
+	background-size: cover;
+}
+
+header h1 {
+	padding: 10rem;
 }
 
 @media screen and (max-width: 1000px) {
@@ -163,6 +165,7 @@ li {
 /* ******************************* */
 
 #about {
+	position: relative;
 	padding: 7rem;
 	background-image: url(./img/fondo.webp);
 	background-size: cover;
@@ -205,12 +208,13 @@ li {
 		width: 100%;
 	}
 }
-	
+
 /* ******************************* */
 /* SERVICES */
 /* ******************************* */
 
 #services {
+	position: relative;
 	padding: 5rem;
 	background-color: rgb(242, 242, 242);
 }

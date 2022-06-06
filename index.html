@@ -16,29 +16,26 @@
 </head>
 <body>
 	
-	<header>
-		<nav>
-			<img src="./img/logo.png" alt="Logo" class="logo">
-			<input type="checkbox" id="check">
-			<label for="check" class="bar_btn">
-				<i class="fa-solid fa-bars barras"></i>
-			</label>
-			<ul class="nav">
-				<li><a href="#inicio">Inicio</a></li>
-				<li><a href="#about">Nosotros</a></li>
-				<li><a href="#services">Servicios</a></li>
-				<!-- <li><a href="#works">Trabajo</a></li>
-				<li><a href="#contact">Contacto</a></li> -->
-			</ul>		
-		</nav>
+	<nav>
+		<img src="./img/logo.png" alt="Logo" class="logo">
+		<input type="checkbox" id="check">
+		<label for="check" class="bar_btn">
+			<i class="fa-solid fa-bars barras"></i>
+		</label>
+		<ul class="nav">
+			<li><a href="#inicio">Inicio</a></li>
+			<li><a href="#about">Nosotros</a></li>
+			<li><a href="#services">Servicios</a></li>
+			<!-- <li><a href="#works">Trabajo</a></li>
+			<li><a href="#contact">Contacto</a></li> -->
+		</ul>		
+	</nav>
 	
-		<div class="presentacion">
-			<h1>Servicios Integrales</h1>
-
-		</div>
+	<header id="inicio">
+		<h1>Servicios Integrales</h1>
 	</header>
 
-	<div id="about">
+	<section id="about">
 
 		<h1>¿Quiénes somos?</h1>
 		<div class="about_container">
@@ -52,9 +49,9 @@
 			</p>
 		</div>
 
-	</div>
+	</section>
 
-	<div id="services">
+	<section id="services">
 
 		<h1>Nuestros Servicios</h1>
 
@@ -85,7 +82,14 @@
 			</div>
 		</div>
 
-	</div>
+	</section>
+
+	<!-- <script type="text/javascript">
+		window.addEventListener("scroll", function() {
+			var header = document.querySelector("nav");
+			header.classList.toggle("sticky", window.scrollY > 0);
+		})
+	</script> -->
 
 </body>
 </html>
