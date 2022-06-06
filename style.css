@@ -150,17 +150,26 @@ li {
 	}
 }
 
+@media screen and (max-width: 450px) {
+	.logo {
+		width: 120px;
+		height: 50px;
+		margin: 2rem;
+	}
+}
+
 /* ******************************* */
 /* ABOUT */
 /* ******************************* */
 
 #about {
 	padding: 7rem;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	background-image: url(./img/fondo.webp);
 	background-size: cover;
+}
+
+#about h1 {
+	margin-bottom: 2.3rem;
 }
 
 #about img {
@@ -169,27 +178,31 @@ li {
 
 .about_container {
 	padding: 2rem 5rem;
-}
-
-.about_container h1 {
-	margin-bottom: 2.3rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 4rem;
 }
 
 .about_container p {
 	text-align: justify;
-	width: 500px;
+	max-width: 450px;
 }
 
-@media screen and (max-width: 1000px) {
-	#about {
+@media screen and (max-width: 1250px) {
+	.about_container {
 		flex-direction: column;
+		padding: 2rem 0;
+	}
+
+	#about {
+		padding: 2rem;
 	}
 }
 
 @media screen and (max-width: 700px) {
 	#about img {
-		width: 400px;
-		height: 250px;
+		width: 100%;
 	}
 }
 	
