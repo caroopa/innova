@@ -56,7 +56,7 @@ p {
 nav {
 	display: flex;
 	justify-content: space-between;
-	position: sticky;
+	/* position: sticky; */
 	top: 0;
 	background-color: var(--color-secundario);
 	width: 100%;
@@ -128,6 +128,7 @@ header h1 {
 		text-align: center;
 		transition: all .5s;
 		border-bottom: 2px solid var(--color-terciario);
+		z-index: 1000;
 	}
 
 	.nav li {
