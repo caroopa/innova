@@ -3,6 +3,7 @@
 	--color-secundario: white;
 	--color-terciario: #19484D;
 	--color-cuarto: #2AB8C6;
+	--color-quinto: rgb(242, 242, 242);
 }
 
 * {
@@ -17,7 +18,7 @@ a {
 }
 
 a:link, a:visited {
-	color: var(--color-quinto);
+	color: var(--color-terciario);
 }
 
 a:hover {
@@ -82,7 +83,7 @@ li {
 .logo {
 	width: 160px;
 	height: 60px;
-	margin: 1rem 5rem;
+	margin: 2rem 5rem;
 }
 
 #check {
@@ -127,7 +128,7 @@ header h1 {
 		background: var(--color-secundario);
 		text-align: center;
 		transition: all .5s;
-		border-bottom: 2px solid var(--color-terciario);
+		/* border-bottom: 2px solid var(--color-terciario); */
 		z-index: 1000;
 	}
 
@@ -173,29 +174,27 @@ header h1 {
 	background-size: cover;
 }
 
-#about h1 {
-	margin-bottom: 2.3rem;
-}
-
-#about img {
+.container img {
 	border: 3px solid var(--color-primario);
 }
 
-.about_container {
-	padding: 2rem 5rem;
+.container {
+	padding: 5rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	gap: 4rem;
+	max-width: 1300px;
+	margin: 0 auto;
 }
 
-.about_container p {
+.container p {
 	text-align: justify;
 	max-width: 450px;
 }
 
 @media screen and (max-width: 1250px) {
-	.about_container {
+	.container {
 		flex-direction: column;
 		padding: 2rem 0;
 	}
@@ -206,7 +205,7 @@ header h1 {
 }
 
 @media screen and (max-width: 700px) {
-	#about img {
+	.container img {
 		width: 100%;
 	}
 }
@@ -218,7 +217,7 @@ header h1 {
 #services {
 	position: relative;
 	padding: 5rem;
-	background-color: rgb(242, 242, 242);
+	background-color: var(--color-quinto);
 }
 
 .services_container {
@@ -267,4 +266,48 @@ button {
 	.services_container {
 		flex-direction: column;
 	}
+}
+
+/* ******************************* */
+/* MANTENIMIENTO */
+/* ******************************* */
+
+.titulazo {
+	padding: 3rem;
+	background-color: var(--color-quinto);
+}
+
+.card_container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 2rem;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	max-width: 500px;
+	background-color: var(--color-quinto);
+	padding: 2rem;
+}
+
+.card h2 {
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+.card p {
+	text-align: justify;
+}
+
+.card_img {
+	height: 130px;
+	width: 130px;
+	border-radius: 50%;
+	padding: 3px;
+	background: var(--color-primario);
+	margin-bottom: 2rem;
 }
