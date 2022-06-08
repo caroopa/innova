@@ -22,7 +22,7 @@ a:link, a:visited {
 }
 
 a:hover {
-	color: var(--color-primario);
+	color: var(--color-cuarto);
 }
 
 h1 {
