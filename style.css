@@ -175,7 +175,7 @@ header h1 {
 }
 
 .container img {
-	border: 3px solid var(--color-primario);
+	border: 5px solid var(--color-primario);
 }
 
 .container {
@@ -207,6 +207,10 @@ header h1 {
 @media screen and (max-width: 700px) {
 	.container img {
 		width: 100%;
+	}
+
+	.container p {
+		margin: 2rem;
 	}
 }
 
