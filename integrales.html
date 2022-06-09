@@ -16,19 +16,34 @@
 </head>
 <body>
 
-	<nav>
-		<img src="./img/logo.png" alt="Logo" class="logo">
-		<input type="checkbox" id="check">
-		<label for="check" class="bar_btn">
-			<i class="fa-solid fa-bars barras"></i>
-		</label>
-		<ul class="nav">
-			<li><a href="index.html">Inicio</a></li>
-			<li><a href="espaciosverdes.html">Espacios Verdes</a></li>
-			<li><a href="asfalto.html">Asfalto</a></li>
-		</ul>		
-	</nav>
+	<nav class="menu">
+		<section class="menu__container">
+			<img src="./img/logo.png" alt="Logo" class="logo">
 
+			<ul class="menu__links">
+				<li class="menu__item"><a href="index.html#inicio" class="menu__link">Inicio</a></li>
+				<li class="menu__item"><a href="index.html#about" class="menu__link">Nosotros</a></li>
+				<li class="menu__item menu__item--show">
+					<a href="index.html#services" class="menu__link">Servicios
+						<i class="fa-solid fa-chevron-down menu__arrow"></i></a>
+					<ul class="menu__nesting">
+						<li class="menu__inside">
+							<a href="espaciosverdes.html" class="menu__link menu__link--inside">Espacios Verdes</a></li>
+						<li class="menu__inside">
+							<a href="integrales.html" class="menu__link menu__link--inside">Servicios Integrales</a></li>
+						<li class="menu__inside">
+							<a href="asfalto.html" class="menu__link menu__link--inside">Asfalto</a></li>
+					</ul>
+				</li>
+				<li class="menu__item"><a href="#contacto" class="menu__link">Contacto</a>
+			</ul>
+
+			<div class="menu__hamburguer">
+				<i class="fa-solid fa-bars-staggered menu__img"></i>
+			</div>
+		</section>
+	</nav>
+	
 	<h1 class="titulazo">Servicios Integrales</h1>
 
 	<div class="container2">
@@ -43,72 +58,119 @@
 		</p>
 	</div>
 
-	<section class="card_container">
+	<section class="slider">
+		<div class="slider__container container">
 
-        <div class="card">
-            <h2>Albañilería</h2>
-            <img src="./img/albañileria.jpg" alt="" class="card_img">
-            <p>
-				Se lleva a cabo todo tipo de trabajos de albañilería, coordinando
+			<i class="fa-solid fa-arrow-left slider__arrow" id="before"></i>
+
+			<section class="slider__body slider__body--show" data-id="1">
+				<div class="slider__texts">
+
+					<h2 class="subtitle">Albañilería</h2>
+					<p class="slider__review">
+						Se lleva a cabo todo tipo de trabajos de albañilería, coordinando
 				todos los oficios y gremios que intervienen hasta la total terminación
 				de la obra, lo cual abarata los costes y agiliza el trabajo.
 				Se realizan con la mayor rapidez y seguridad, logrando
 				unos acabados perfectos.
-            </p>
-        </div>
-        <div class="card">
-            <h2>Herrería</h2>
-            <img src="./img/herreria.jpg" alt="" class="card_img">
-            <p>
-				Se trabaja con materiales de primera marca, lo que garantiza un
-				producto de calidad. Las obras realizadas muestran estilo, calidad
-				y diseño.
-				La capacitación constante, suma de nuevas tecnologías y métodos
-				de fabricación.            
-			</p>
-        </div>
-        <div class="card">
-            <h2>Plomería</h2>
-            <img src="./img/plomeria.jpg" alt="" class="card_img">
-            <p>
-				Se efectúa todo tipo de instalación, mantenimiento, reparaciones
-				y todo lo relacionado con redes hidráulicas y sanitarias, además
-				de sondeo y limpieza de tuberías de agua potable con equipos
-				especializados para ello, generando así solución a las bajas presiones
-				de agua. 
-			</p>
-        </div>
-        <div class="card">
-            <h2>Pintura</h2>
-            <img src="./img/pintura.jpg" alt="" class="card_img">
-            <p>
-				Se elabora todo tipo de trabajos de pintura, como ser, edificios,
-				viviendas, locales, oficinas, garages, etc. Profesionales
-				en la preparación de soportes enduído y alisado de superficies.
-				Se crean espacios confortables donde se disfrute de un
-				ambiente personalizado.
-			</p>
-        </div>
-        <div class="card">
-            <h2>Refrigeración</h2>
-            <img src="./img/refrigeracion.png" alt="" class="card_img">
-            <p>
-				Se hacen servicios de mantenimiento de excelente calidad
-				técnica a sistemas de refrigeración y aire acondicionado para
-				así optimizar el funcionamiento de estos equipos y reducir
-				costos. Así mismo, realizar el plan de recuperación de refrigerantes.
-			</p>
-        </div>
-        <div class="card">
-            <h2>Demolición</h2>
-            <img src="./img/demolicion.jpg" alt="" class="card_img">
-            <p>
-				Se trabaja en todo tipo de demoliciones. Se cuenta con el personal,
-				la maquinaria y los conocimientos necesarios para demoler
-				cualquier construcción, ya sea total o parcialmente, utilizando
-				las técnicas y los medios que sean más apropiados.
-			</p>
-        </div>
+					</p>
+	
+				</div>
+				<figure class="slider__picture">
+					<img src="./img/albañileria.jpg" alt="" class="slider__img">	
+				</figure>
+			</section>
+
+			<section class="slider__body" data-id="2">
+				<div class="slider__texts">
+
+					<h2 class="subtitle">Herrería</h2>
+					<p class="slider__review">
+						Se trabaja con materiales de primera marca, lo que garantiza un
+						producto de calidad. Las obras realizadas muestran estilo, calidad
+						y diseño.
+						La capacitación constante, suma de nuevas tecnologías y métodos
+						de fabricación. 					
+					</p>
+	
+				</div>
+				<figure class="slider__picture">
+					<img src="./img/herreria.jpg" alt="" class="slider__img">	
+				</figure>
+			</section>
+
+			<section class="slider__body" data-id="3">
+				<div class="slider__texts">
+
+					<h2 class="subtitle">Plomería</h2>
+					<p class="slider__review">
+						Se efectúa todo tipo de instalación, mantenimiento, reparaciones
+						y todo lo relacionado con redes hidráulicas y sanitarias, además
+						de sondeo y limpieza de tuberías de agua potable con equipos
+						especializados para ello, generando así solución a las bajas presiones
+						de agua. 
+					</p>
+	
+				</div>
+				<figure class="slider__picture">
+					<img src="./img/plomeria.jpg" alt="" class="slider__img">	
+				</figure>
+			</section>
+
+			<section class="slider__body" data-id="4">
+				<div class="slider__texts">
+
+					<h2 class="subtitle">Pintura</h2>
+					<p class="slider__review">
+						Se elabora todo tipo de trabajos de pintura, como ser, edificios,
+						viviendas, locales, oficinas, garages, etc. Profesionales
+						en la preparación de soportes enduído y alisado de superficies.
+						Se crean espacios confortables donde se disfrute de un
+						ambiente personalizado.
+					</p>
+	
+				</div>
+				<figure class="slider__picture">
+					<img src="./img/pintura.jpg" alt="" class="slider__img">	
+				</figure>
+			</section>			
+
+			<section class="slider__body" data-id="5">
+				<div class="slider__texts">
+
+					<h2 class="subtitle">Refrigeración</h2>
+					<p class="slider__review">
+						Se hacen servicios de mantenimiento de excelente calidad
+						técnica a sistemas de refrigeración y aire acondicionado para
+						así optimizar el funcionamiento de estos equipos y reducir
+						costos. Así mismo, realizar el plan de recuperación de refrigerantes.
+					</p>
+	
+				</div>
+				<figure class="slider__picture">
+					<img src="./img/refrigeracion.png" alt="" class="slider__img">	
+				</figure>
+			</section>
+
+			<section class="slider__body" data-id="6">
+				<div class="slider__texts">
+
+					<h2 class="subtitle">Demolición</h2>
+					<p class="slider__review">
+						Se trabaja en todo tipo de demoliciones. Se cuenta con el personal,
+						la maquinaria y los conocimientos necesarios para demoler
+						cualquier construcción, ya sea total o parcialmente, utilizando
+						las técnicas y los medios que sean más apropiados.
+					</p>
+	
+				</div>
+				<figure class="slider__picture">
+					<img src="./img/demolicion.jpg" alt="" class="slider__img">	
+				</figure>
+			</section>
+
+			<i class="fa-solid fa-arrow-right slider__arrow" id="next"></i>
+		</div>
 	</section>
 
 	<footer id="contacto">
@@ -132,7 +194,8 @@
 
 	</footer>
 
-</body>
-<script src="main.js"></script>
+	<script src="sliders.js"></script>
+	<script src="main.js"></script>
 
+</body>
 </html>

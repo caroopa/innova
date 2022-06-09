@@ -15,29 +15,42 @@
     />
 </head>
 <body>
-	
-	<nav>
-		<img src="./img/logo.png" alt="Logo" class="logo">
-		<input type="checkbox" id="check">
-		<label for="check" class="bar_btn">
-			<i class="fa-solid fa-bars barras"></i>
-		</label>
-		<ul class="nav">
-			<li><a href="#inicio">Inicio</a></li>
-			<li><a href="#about">Nosotros</a></li>
-			<li><a href="#services">Servicios</a></li>
-			<li><a href="#contacto">Contacto</a></li>
-		</ul>		
+
+	<nav class="menu">
+		<section class="menu__container">
+			<img src="./img/logo.png" alt="Logo" class="logo">
+
+			<ul class="menu__links">
+				<li class="menu__item"><a href="#inicio" class="menu__link">Inicio</a></li>
+				<li class="menu__item"><a href="#about" class="menu__link">Nosotros</a></li>
+				<li class="menu__item menu__item--show">
+					<a href="#services" class="menu__link">Servicios<i class="fa-solid fa-chevron-down menu__arrow"></i></a>
+					<ul class="menu__nesting">
+						<li class="menu__inside">
+							<a href="espaciosverdes.html" class="menu__link menu__link--inside">Espacios Verdes</a></li>
+						<li class="menu__inside">
+							<a href="integrales.html" class="menu__link menu__link--inside">Servicios Integrales</a></li>
+						<li class="menu__inside">
+							<a href="asfalto.html" class="menu__link menu__link--inside">Asfalto</a></li>
+					</ul>
+				</li>
+				<li class="menu__item"><a href="#contacto" class="menu__link">Contacto</a>
+			</ul>
+
+			<div class="menu__hamburguer">
+				<i class="fa-solid fa-bars-staggered menu__img"></i>
+			</div>
+		</section>
 	</nav>
-	
+
 	<header id="inicio">
-		<h1>Servicios Integrales</h1>
+		<h1>Servicios</br> Integrales</h1>
 	</header>
 
 	<section id="about">
 
 		<h1>¿Quiénes somos?</h1>
-		<div class="container">
+		<div class="container2">
 			<img src="./img/hidroelevador.jpg" alt="Hidroelevador">
 			<p>Grupo Innova es una empresa con más de 10 años de experiencia especializada
 				en obra civil y pública en el desarrollo y conservación de espacios verdes, 
@@ -104,5 +117,6 @@
 
 	</footer>
 
+	<script src="main.js"></script>
 </body>
 </html>

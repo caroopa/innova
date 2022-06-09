@@ -16,17 +16,32 @@
 </head>
 <body>
 
-	<nav>
-		<img src="./img/logo.png" alt="Logo" class="logo">
-		<input type="checkbox" id="check">
-		<label for="check" class="bar_btn">
-			<i class="fa-solid fa-bars barras"></i>
-		</label>
-		<ul class="nav">
-			<li><a href="index.html">Inicio</a></li>
-			<li><a href="integrales.html">Servicios Integrales</a></li>
-			<li><a href="asfalto.html">Asfalto</a></li>
-		</ul>		
+	<nav class="menu">
+		<section class="menu__container">
+			<img src="./img/logo.png" alt="Logo" class="logo">
+
+			<ul class="menu__links">
+				<li class="menu__item"><a href="index.html#inicio" class="menu__link">Inicio</a></li>
+				<li class="menu__item"><a href="index.html#about" class="menu__link">Nosotros</a></li>
+				<li class="menu__item menu__item--show">
+					<a href="index.html#services" class="menu__link">Servicios
+						<i class="fa-solid fa-chevron-down menu__arrow"></i></a>
+					<ul class="menu__nesting">
+						<li class="menu__inside">
+							<a href="espaciosverdes.html" class="menu__link menu__link--inside">Espacios Verdes</a></li>
+						<li class="menu__inside">
+							<a href="integrales.html" class="menu__link menu__link--inside">Servicios Integrales</a></li>
+						<li class="menu__inside">
+							<a href="asfalto.html" class="menu__link menu__link--inside">Asfalto</a></li>
+					</ul>
+				</li>
+				<li class="menu__item"><a href="#contacto" class="menu__link">Contacto</a>
+			</ul>
+
+			<div class="menu__hamburguer">
+				<i class="fa-solid fa-bars-staggered menu__img"></i>
+			</div>
+		</section>
 	</nav>
 
 	<h1 class="titulazo">Mantenimiento de Espacios Verdes</h1>
@@ -38,13 +53,6 @@
 			tecnologías agronómicas, equipos, herramientas y el conocimiento necesario.
 		</p>
 	</div>
-	
-	<section class="tareas">
-
-		<!-- PONER TAREAAAAAAS -->
-
-
-	</section>
 
 	<section class="slider">
 		<div class="slider__container container">
@@ -57,8 +65,8 @@
 					<h2 class="subtitle">Parquización</h2>
 					<p class="slider__review">
 						Trabajamos con panes y semillas de primera calidad para brindar una mejor
-                germinación o adaptación al suelo. Para ello, analizamos previamente el suelo.
-                En base a esto, determinamos las especies de céspedes aptas para cada sector.
+						germinación o adaptación al suelo. Para ello, analizamos previamente el suelo.
+						En base a esto, determinamos las especies de céspedes aptas para cada sector.
 					</p>
 	
 				</div>
@@ -125,7 +133,7 @@
 					<p class="slider__review">
 						Realizamos podas de formación, de seguridad, de limpieza, entre otras. A partir de esto,
 						seleccionamos las herramientas que debemos utilizar. En podas de seguridad, dependendo de
-						la alaatura de la especie, determinamos si es una poda a 2 o más metros de altura para definir
+						la altura de la especie, determinamos si es una poda a 2 o más metros de altura para definir
 						el uso de una hidrogrua en caso de ser necesario. En cuanto a los residuos generados, nos 
 						hacemos cargo de su retiro y disposición final.
 					</p>
@@ -162,6 +170,6 @@
 	</footer>
 
     <script src="sliders.js"></script>
-
+    <script src="main.js"></script>
 </body>
 </html>

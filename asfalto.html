@@ -16,22 +16,36 @@
 </head>
 <body>
 
-	<nav>
-		<img src="./img/logo.png" alt="Logo" class="logo">
-		<input type="checkbox" id="check">
-		<label for="check" class="bar_btn">
-			<i class="fa-solid fa-bars barras"></i>
-		</label>
-		<ul class="nav">
-			<li><a href="index.html">Inicio</a></li>
-			<li><a href="espaciosverdes.html">Espacios Verdes</a></li>
-			<li><a href="integrales.html">Servicios Integrales</a></li>
-		</ul>		
-	</nav>
+	<nav class="menu">
+		<section class="menu__container">
+			<img src="./img/logo.png" alt="Logo" class="logo">
 
+			<ul class="menu__links">
+				<li class="menu__item"><a href="index.html#inicio" class="menu__link">Inicio</a></li>
+				<li class="menu__item"><a href="index.html#about" class="menu__link">Nosotros</a></li>
+				<li class="menu__item menu__item--show">
+					<a href="index.html#services" class="menu__link">Servicios
+						<i class="fa-solid fa-chevron-down menu__arrow"></i></a>
+					<ul class="menu__nesting">
+						<li class="menu__inside">
+							<a href="espaciosverdes.html" class="menu__link menu__link--inside">Espacios Verdes</a></li>
+						<li class="menu__inside">
+							<a href="integrales.html" class="menu__link menu__link--inside">Servicios Integrales</a></li>
+						<li class="menu__inside">
+							<a href="asfalto.html" class="menu__link menu__link--inside">Asfalto</a></li>
+					</ul>
+				</li>
+				<li class="menu__item"><a href="#contacto" class="menu__link">Contacto</a>
+			</ul>
+
+			<div class="menu__hamburguer">
+				<i class="fa-solid fa-bars-staggered menu__img"></i>
+			</div>
+		</section>
+	</nav>
 	<h1 class="titulazo">Servicios de Asfalto</h1>
 
-	<div class="container">
+	<div class="container2">
 		<img src="./img/asfaslto.jpg" alt="Mantenimiento">
 		<p>
 			El servicio de bacheo consiste en reparaciones tanto de
@@ -45,45 +59,78 @@
 		</p>
 	</div>
 
-	<section class="card_container">
+	<section class="slider">
+		<div class="slider__container container">
 
-        <div class="card">
-            <h2>Bacheo</h2>
-            <img src="./img/bacheo.webp" alt="" class="card_img">
-            <p>
-				Cuando los pozos de una calzada no superan los 30m2 de superficie
-				se procede a reparar cada bache de manera individual. Si el tamaño
-				del pozo es superior, se realizan tareas de pavimentación.
-            </p>
-        </div>
-        <div class="card">
-            <h2>Mantenimiento del pavimento</h2>
-            <img src="./img/mantenimientobache.jpg" alt="" class="card_img">
-            <p>
-				Se realizan tareas de mantenimiento del pavimento tales como limpieza
-				del bache, sellado del bache, llenado del bache y poreo de la reparación.            
-			</p>
-        </div>
-        <div class="card">
-            <h2>Carpeta asfáltica</h2>
-            <img src="./img/carpeta.jpg" alt="" class="card_img">
-            <p>
-				Somos especialistas en suministro e instalación de mezcla asfáltica.
-				Contamos con todos los equipos, reformas y mantenimiento.
-				Realizamos todo tipo de obra civil, estructura para pavimentos.
-			</p>
-        </div>
-        <div class="card">
-            <h2>Sellado de juntas y grietas</h2>
-            <img src="./img/sellado.jpg" alt="" class="card_img">
-            <p>
-				Nos centramos en la calidad y el rendimiento a largo plazo y por lo
-				tanto, fabriccamos productos que tienen una vida útil significativa
-				como sellador de grietas a base de asfalto aplicado en caliente y sellador
-				de junta aplicada en frío que han demostrado en estudios independientes
-				para proporcionar la vida útil más larga disponible.
-			</p>
-        </div>
+			<i class="fa-solid fa-arrow-left slider__arrow" id="before"></i>
+
+			<section class="slider__body slider__body--show" data-id="1">
+				<div class="slider__texts">
+
+					<h2 class="subtitle">Bacheo</h2>
+					<p class="slider__review">
+						Cuando los pozos de una calzada no superan los 30m2 de superficie
+						se procede a reparar cada bache de manera individual. Si el tamaño
+						del pozo es superior, se realizan tareas de pavimentación.
+					</p>
+	
+				</div>
+				<figure class="slider__picture">
+					<img src="./img/bacheo.webp" alt="" class="slider__img">	
+				</figure>
+			</section>
+
+			<section class="slider__body" data-id="2">
+				<div class="slider__texts">
+
+					<h2 class="subtitle">Mantenimiento del pavimento</h2>
+					<p class="slider__review">
+						Se realizan tareas de mantenimiento del pavimento tales como limpieza
+						del bache, sellado del bache, llenado del bache y poreo de la reparación.					
+					</p>
+	
+				</div>
+				<figure class="slider__picture">
+					<img src="./img/mantenimientobache.jpg" alt="" class="slider__img">	
+				</figure>
+			</section>
+
+			<section class="slider__body" data-id="3">
+				<div class="slider__texts">
+
+					<h2 class="subtitle">Carpeta asfáltica</h2>
+					<p class="slider__review">
+						Somos especialistas en suministro e instalación de mezcla asfáltica.
+						Contamos con todos los equipos, reformas y mantenimiento.
+						Realizamos todo tipo de obra civil, estructura para pavimentos.
+					</p>
+	
+				</div>
+				<figure class="slider__picture">
+					<img src="./img/carpeta.jpg" alt="" class="slider__img">	
+				</figure>
+			</section>
+
+			<section class="slider__body" data-id="4">
+				<div class="slider__texts">
+
+					<h2 class="subtitle">Sellado de juntas y grietas</h2>
+					<p class="slider__review">
+						Nos centramos en la calidad y el rendimiento a largo plazo y por lo
+						tanto, fabriccamos productos que tienen una vida útil significativa
+						como sellador de grietas a base de asfalto aplicado en caliente y sellador
+						de junta aplicada en frío que han demostrado en estudios independientes
+						para proporcionar la vida útil más larga disponible.
+					</p>
+	
+				</div>
+				<figure class="slider__picture">
+					<img src="./img/sellado.jpg" alt="" class="slider__img">	
+				</figure>
+			</section>			
+
+			<i class="fa-solid fa-arrow-right slider__arrow" id="next"></i>
+		</div>
 	</section>
 
 	<footer id="contacto">
@@ -107,7 +154,8 @@
 
 	</footer>
 
-</body>
-<script src="main.js"></script>
+	<script src="sliders.js"></script>
+	<script src="main.js"></script>
 
+</body>
 </html>
