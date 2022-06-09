@@ -44,5 +44,4 @@
 	}
 
 	menu.addEventListener("click", () => list.classList.toggle("menu__links--show"));
-
 })();

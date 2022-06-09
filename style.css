@@ -61,6 +61,7 @@ header {
 	height: 600px;
 	background-image: url(./img/espacios\ verdes.jpg);
 	background-size: cover;
+	top: 5rem;
 }
 
 header h1 {
@@ -78,6 +79,10 @@ header h1 {
 	background-color: var(--color-secundario);
 	height: 5rem;
 	border-bottom: 2px solid var(--color-terciario);
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 1000;
 }
 
 .menu__container {
@@ -144,6 +149,7 @@ header h1 {
 	width: max-content;
 	transform: translateY(100%);
 	background-color: var(--color-quinto);
+	border: 2px solid var(--color-terciario);
 }
 
 .menu__link--inside {
@@ -161,6 +167,8 @@ header h1 {
 	padding: 0 15px;
 	cursor: pointer;
 	display: none;
+	font-size: 2rem;
+	color: var(--color-primario);
 }
 
 .menu__img {
@@ -199,6 +207,8 @@ header h1 {
 		display: grid;
 		grid-auto-rows: max-content;
 		transform: translateX(100%);
+		border-left: 2px solid var(--color-terciario);
+		color: var(--color-terciario);
 	}
 
 	.menu__links--show {
@@ -357,6 +367,7 @@ button {
 .titulazo {
 	padding: 3rem;
 	background-color: var(--color-quinto);
+	margin-top: 5rem;
 }
 
 /* ----------------- */
@@ -422,6 +433,7 @@ button {
     cursor: pointer;
     font-size: 2rem;
 	color: var(--color-primario);
+	margin: 0 1rem;
 }
 
 .slider__arrow:nth-of-type(2) {
