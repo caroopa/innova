@@ -61,7 +61,7 @@ header {
 	height: 600px;
 	background-image: url(./img/espacios\ verdes.jpg);
 	background-size: cover;
-	top: 5rem;
+	margin-top: 5rem;
 }
 
 header h1 {
@@ -149,7 +149,6 @@ header h1 {
 	width: max-content;
 	transform: translateY(100%);
 	background-color: var(--color-quinto);
-	border: 2px solid var(--color-terciario);
 }
 
 .menu__link--inside {
@@ -197,7 +196,7 @@ header h1 {
 
 	.menu__links {
 		position: fixed;
-		max-width: 400px;
+		max-width: 250px;
 		width: 100%;
 		top: 5rem;
 		right: 0;
