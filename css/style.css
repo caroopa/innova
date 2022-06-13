@@ -299,7 +299,7 @@ video {
 #about {
 	position: relative;
 	padding: 7rem;
-	background-image: url(../img/fondo.webp);
+	background-image: url(../img/fondo.png);
 	background-size: cover;
 }
 
