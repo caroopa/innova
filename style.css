@@ -8,6 +8,10 @@
 	--color-quinto: #f2f2f2;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 * {
 	padding: 0;
 	margin: 0;
@@ -300,6 +304,7 @@ video {
 
 .container2 img {
 	border: 5px solid var(--color-primario);
+	width: 520px;
 }
 
 .container2 {
