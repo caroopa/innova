@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 :root {
 	--color-primario: #9BC53B;
 	--color-secundario: #ffff;
@@ -10,7 +12,7 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 a {
@@ -26,14 +28,14 @@ a:hover {
 }
 
 h1 {
-	font-size: 2.8;
+	font-size: 2.5rem;
 	text-align: center;
 	color: var(--color-terciario);
 	text-shadow: 2px 2px var(--color-cuarto);
 }
 
 h2 {
-	font-size: 2.5;
+	font-size: 2rem;
 	color: var(--color-terciario);
 }
 
@@ -58,22 +60,57 @@ p {
 
 header {
 	/* position: relative; */
-	height: 600px;
-	background-image: url(./img/espacios\ verdes.jpg);
-	background-size: cover;
+	height: 60vh;
+	background-color: rgba(0, 0, 0, 0.5);
 	margin-top: 5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
-header h1 {
+.titulos {
+	position: absolute;
 	padding: 10rem 0;
-	font-size: 4rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+.titulos h1 {
+	font-size: 4rem;
+	z-index: 1;
+	color: var(--color-secundario);
+	text-shadow: 2px 2px var(--color-terciario);
+	text-decoration: underline;
+	text-decoration-color: var(--color-primario);
 }
+
+.titulos h2 {
+	z-index: 1;
+	color: var(--color-secundario);
+}
+
+video {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	object-fit: cover;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: -1;
+}
+
+@media screen and (max-width: 720px) {
+	header h2 {
+		padding: 1rem 0;
+	}
+}
+
+/* ******************************* */
+/* NAVBAR */
+/* ******************************* */
 
 .menu {
 	background-color: var(--color-secundario);
