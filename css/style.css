@@ -450,7 +450,7 @@ button {
 
 .container {
 	padding: 5rem 0;
-	width: 95vmin;
+	max-width: 1300px;
 	/* min-width: 30em; */
 	/* height: 30em; */
 	/* margin: 0 auto; */
