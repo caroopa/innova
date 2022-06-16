@@ -172,6 +172,7 @@ video {
 	display: flex;
 	height: 100%;
 	align-items: center;
+	color: var(--color-terciario);
 }
 
 .menu__link:hover {
@@ -183,6 +184,7 @@ video {
 	transition: transform .3s;
 	display: block;
 	margin-left: 30px;
+	color: var(--color-terciario);
 }
 
 .menu__nesting {
@@ -302,7 +304,7 @@ video {
 
 #about {
 	position: relative;
-	padding: 5rem;
+	padding: 3rem 5rem 1rem 5rem;
 	background-image: url(../img/fondo.jpg);
 	background-size: cover;
 }
@@ -315,7 +317,7 @@ video {
 }
 
 .container2 {
-	padding: 5rem;
+	padding: 3rem 10rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;
