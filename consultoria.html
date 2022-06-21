@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Grupo Innova</title>
+
+	<link href="./css/style.css" rel="stylesheet" type="text/css">
+	
+	<!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+</head>
+<body>
+
+	<nav class="menu">
+		<section class="menu__container">
+			<img src="./img/logo.png" alt="Logo" class="logo">
+
+			<ul class="menu__links">
+				<li class="menu__item"><a href="index.html#inicio" class="menu__link">Inicio</a></li>
+				<li class="menu__item"><a href="index.html#about" class="menu__link">Nosotros</a></li>
+				<li class="menu__item menu__item--show">
+					<a class="menu__link">Servicios<i class="fa-solid fa-chevron-down menu__arrow"></i></a>
+					<ul class="menu__nesting">
+						<li class="menu__inside">
+							<a href="espaciosverdes.html" class="menu__link menu__link--inside">Espacios Verdes</a></li>
+						<li class="menu__inside">
+							<a href="integrales.html" class="menu__link menu__link--inside">Servicios Integrales</a></li>
+						<li class="menu__inside">
+							<a href="asfalto.html" class="menu__link menu__link--inside">Asfalto</a></li>
+					</ul>
+				</li>
+				<li class="menu__item"><a href="consultoria.html" class="menu__link">Consultoría</a></li>
+				<li class="menu__item"><a href="#contacto" class="menu__link">Contacto</a>
+			</ul>
+
+			<div class="menu__hamburguer">
+				<i class="fa-solid fa-bars-staggered menu__img"></i>
+			</div>
+		</section>
+	</nav>
+
+	<h1 class="titulazo">Consultoría</h1>
+
+	<div class="container2 fondo4">
+		<p>
+			Innova se dedica a la proyección, dirección y construcción de obras arquitectónicas brindando soluciones 
+			integrales y respuestas concretas a los desafíos planteados. En este sentido, el estudio se convierte en un 
+			lugar de búsqueda donde se reformulan las temáticas convencionales de la arquitectura considerando el entorno, 
+			el clima, los factores económicos y personales que podrían incidir en las personas que habitarán los espacios.
+			La metodología de trabajo consiste en la recolección de información y el análisis del problema desde distintos 
+			puntos de vista en pos de garantizar los mejores resultados. De esta manera el trabajo en equipos permite una 
+			planificación ordenada y la optimización al máximo de los recursos.
+		</p>
+	</div>
+
+	<section class="consultoria">
+		<div class="consultoria_card">
+			<i class="fa-solid fa-book icono"></i>
+			<h2>Diseño del Proyecto</h2>
+			<p>Asesoramos la elección del terreno que mejor se adapte a sus objetivos. 
+				Escuchamos las ideas del cliente y proponemos soluciones para llegar al proyecto definitivo 
+				con toda su documentación.
+			</p>
+		</div>
+		<div class="consultoria_card">
+			<i class="fa-solid fa-square-pen icono"></i>
+			<h2>Planos</h2>
+			<p>Gestionamos los permisos necesarios para la ejecución de la obra. 
+				También realizamos la aprobación ante las administraciones de cada barrio en particular, 
+				presentando toda la información técnica y grafica para el permiso interno de obra.
+			</p>
+		</div>
+		<div class="consultoria_card">
+			<i class="fa-solid fa-money-bill icono"></i>
+			<h2>Presupuesto</h2>
+			<p>Realizamos el cómputo de materiales necesarios para la realización de la obra y detallamos las tareas 
+				del personal a cargo. Planificamos un plan de pagos para el desarrollo de la obra. Cada proyecto contará 
+				con su correspondiente estudio de suelos y cálculo estructural.
+			</p>
+		</div>
+		<div class="consultoria_card">
+			<i class="fa-solid fa-trowel icono"></i>
+			<h2>Construcción</h2>
+			<p>Realizamos el seguimiento de la compra y entrega en obra de todos los materiales necesarios para la 
+				ejecución de la misma. Ejecutamos la realización y el control de todas las tareas para lograr la obra terminada.
+			</p>
+		</div>
+	</section>
+
+	<div class="slider-container">
+		<div class="dots">
+			<label for="slide-dot-1"></label>
+			<label for="slide-dot-2"></label>
+			<label for="slide-dot-3"></label>
+			<label for="slide-dot-4"></label>
+			<label for="slide-dot-5"></label>
+		</div>
+		<input id="slide-dot-1" type="radio" name="slides" checked>
+		<div class="slide slide-1"></div>
+		<input id="slide-dot-2" type="radio" name="slides">
+		<div class="slide slide-2"></div>
+		<input id="slide-dot-3" type="radio" name="slides">
+		<div class="slide slide-3"></div>
+		<input id="slide-dot-4" type="radio" name="slides">
+		<div class="slide slide-4"></div>
+		<input id="slide-dot-5" type="radio" name="slides">
+		<div class="slide slide-5"></div>
+    </div>
+
+	<footer id="contacto">
+		
+		<img src="./img/logo.png" alt="Logo" class="logo">
+
+		<div class="contact_container">
+			<div class="footer_container">
+				<i class="fa-solid fa-location-dot"></i>
+				<div>Alberdi 4715 (Caseros)</div>
+			</div>
+			<div class="footer_container">
+				<i class="fa-solid fa-envelope"></i>
+				<div>serviciosgrupoinnova1@mail.com</div>
+			</div>
+			<div class="footer_container">
+				<i class="fa-solid fa-phone"></i>
+				<div>+549115958-8968</div>
+			</div>						
+		</div>			
+
+	</footer>
+
+	<script src="./js/main.js"></script>
+</body>
+</html>

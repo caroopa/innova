@@ -65,7 +65,7 @@ p {
 header {
 	/* position: relative; */
 	height: 60vh;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.3);
 	margin-top: 5rem;
 	display: flex;
 	flex-direction: column;
@@ -351,6 +351,11 @@ video {
 	background-size: cover;
 }
 
+.fondo4 {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/arquitectura.jpg);
+	background-size: cover;
+}
+
 @media screen and (max-width: 1250px) {
 	.container2 {
 		flex-direction: column;
@@ -556,5 +561,129 @@ footer {
 	footer {
 		flex-direction: column;
 		gap: 3rem;
+	}
+}
+
+/* ******************************* */
+/* SLIDER */
+/* ******************************* */
+
+.slider-container {
+	margin: 5rem auto;
+	width: 900px;
+	height: 550px;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+	border: 2px solid var(--color-primario);
+	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.dots {
+	position: absolute;
+	left: 0;
+	z-index: 900;
+	width: 100%;
+	bottom: 0;
+}
+
+.dots label {
+	cursor: pointer;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: var(--color-secundario);
+	border: 2px solid var(--color-primario);
+	border-radius: 50px;
+	margin: 0 0.2em 1em;
+}
+
+.dots label:hover,
+.dots label:focus {
+	background: var(--color-terciario);
+}
+
+.slide {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 100%;
+	z-index: 10;
+	padding: 8em 1em 0;
+	/* background-size: cover; */
+	/* background-position: 50% 50%; */
+	transition: left 0s 0.75s;
+}
+
+[id^="slide"]:checked + .slide {
+	left: 0;
+	z-index: 100;
+	transition: left 0.65s ease-out;
+}
+
+.slide-1 {
+	background-image: url("../img/img1.jpg");
+}
+
+.slide-2 {
+	background-image: url("../img/img2.jpg");
+}
+
+.slide-3 {
+	background-image: url("../img/img3.jpg");
+}
+
+.slide-4 {
+	background-image: url("../img/img4.jpg");
+}
+
+.slide-5 {
+	background-image: url("../img/img5.jpg");
+}
+
+@media screen and (max-width: 700px) {
+	.slider-container {
+		width: 300px;
+		height: 250px;
+	}
+
+	.slide {
+		background-size: cover;
+		background-position: 50% 50%;
+	}
+}
+
+/* ******************************* */
+/* CONSULTORÍA */
+/* ******************************* */
+
+.consultoria {
+	display: flex;
+	padding: 5rem;
+	padding-bottom: 1rem;
+	gap: 3rem;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.consultoria_card {
+	max-width: 300px;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	align-items: center;
+	text-align: justify;
+	color: var(--color-terciario);
+}
+
+.icono {
+	font-size: 5rem;
+	color: var(--color-primario);
+}
+
+@media screen and (max-width: 700px) {
+	.consultoria {
+		padding: 2rem;
 	}
 }
