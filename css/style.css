@@ -640,16 +640,9 @@ footer {
 	background-image: url("../img/img4.jpg");
 }
 
-.img5container {
-	margin: 5rem auto;
-	width: 900px;
-	height: 550px;
-	position: relative;
-	overflow: hidden;
-	text-align: center;
-	border: 2px solid var(--color-primario);
-	border-radius: 5px;
-	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+.slide-5 {
+	background-size: cover;
+	background-position: 50% 50%;
 	background-image: url("../img/img5.jpg");
 }
 
