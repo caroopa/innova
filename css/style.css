@@ -223,7 +223,7 @@ video {
 	width: 36px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
 	.menu__hamburguer {
 		display: flex;
 	}
@@ -661,6 +661,13 @@ footer {
 @media screen and (max-width: 700px) {
 	.slider-container {
 		width: 300px;
+		height: 250px;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.slider-container {
+		width: 400px;
 		height: 250px;
 	}
 
