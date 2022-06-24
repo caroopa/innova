@@ -464,6 +464,7 @@ button {
 	display: grid;
 	grid-template-columns: 3fr 8fr;
 	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+	background-color: var(--color-secundario);
 }
   
 .tabs {
@@ -576,6 +577,7 @@ footer {
 	overflow: hidden;
 	text-align: center;
 	border: 2px solid var(--color-primario);
+	border-radius: 5px;
 	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 }
 
@@ -611,7 +613,7 @@ footer {
 	left: 100%;
 	z-index: 10;
 	padding: 8em 1em 0;
-	/* background-size: cover; */
+	background-size: cover;
 	/* background-position: 50% 50%; */
 	transition: left 0s 0.75s;
 }
@@ -638,8 +640,29 @@ footer {
 	background-image: url("../img/img4.jpg");
 }
 
-.slide-5 {
+.img5container {
+	margin: 5rem auto;
+	width: 900px;
+	height: 550px;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+	border: 2px solid var(--color-primario);
+	border-radius: 5px;
+	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 	background-image: url("../img/img5.jpg");
+}
+
+.slide-6 {
+	background-image: url("../img/img6.jpg");
+}
+
+.slide-7 {
+	background-image: url("../img/img7.jpg");
+}
+
+.slide-8 {
+	background-image: url("../img/img8.jpg");
 }
 
 @media screen and (max-width: 700px) {
@@ -668,18 +691,35 @@ footer {
 }
 
 .consultoria_card {
-	max-width: 300px;
+	max-width: 350px;
 	display: flex;
 	flex-direction: column;
 	gap: 2rem;
 	align-items: center;
-	text-align: justify;
 	color: var(--color-terciario);
+	background-color: var(--color-quinto);
+	border-radius: 10px;
+	padding: 2rem;
+}
+
+.consultoria_card h2 {
+	text-align: center;
+}
+
+.consultoria_card p {
+	text-align: justify;
 }
 
 .icono {
 	font-size: 5rem;
 	color: var(--color-primario);
+}
+
+.titulazo2 {
+	padding: 3rem;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/plano.jpg);
+	margin-top: 5rem;
+	color: var(--color-secundario);
 }
 
 @media screen and (max-width: 700px) {
