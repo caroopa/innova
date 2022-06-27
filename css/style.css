@@ -317,7 +317,7 @@ video {
 }
 
 .container2 {
-	padding: 3rem 10rem;
+	padding: 3rem 7rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -354,6 +354,12 @@ video {
 .fondo4 {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/arquitectura.jpg);
 	background-size: cover;
+}
+
+@media screen and (max-width: 1400px) {
+	.container2 img {
+		width: 350px;
+	}
 }
 
 @media screen and (max-width: 1250px) {
